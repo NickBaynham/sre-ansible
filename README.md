@@ -4,6 +4,11 @@ Reference: https://github.com/PacktPublishing/Kubernetes-in-Production-Best-Prac
 
 Execute the steps to create a cluster: https://github.com/NickBaynham/sre-terraform/blob/main/clusters/README.md
 ```
+apt-get update
+apt-get install python3
+apt-get install python3-pip
+pip3 install virtualenv
+
 virtualenv $HOME/ansible-k8s-workspace
 source $HOME/ansible-k8s-workspace/bin/activate
 
