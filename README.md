@@ -17,7 +17,7 @@ pip install ansible openshift pyyaml requests
 ansible-playbook -i \
 /root/sre-ansible/inventories/clusters/ \
 -e "worker_iam_role_arn=$(terraform output worker_iam_role_arn)" \
-/root/sre-ansible/cluster.yaml
+/root/sre-ansible/playbooks/cluster.yaml
 
 kubectl get namespaces
 ```
